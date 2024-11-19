@@ -56,16 +56,7 @@ h3 {
 /* Main Content (initially hidden) */
 #main-content {
   display: none;
-  animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+  animation: fadeIn .5s ease-in forwards;
 }
 
 
@@ -307,34 +298,14 @@ h3 {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes zoomIn {
-  0% {
-    opacity: 0;
-    transform: scale(0) translateY(5px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(7px);
   }
 }
 
-@keyframes slideFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+
+
 @keyframes slideFromRight {
   0% {
     opacity: 0;
@@ -355,16 +326,7 @@ h3 {
     transform: translateY(0);
   }
 }
-@keyframes slideFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 /* Media Queries */
 
