@@ -14,129 +14,150 @@
 
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="#hero">
-            <img src="./assets/logo.png" alt="logo">
-        </a>
-        <div class="heading">
-            <p>bismillah hir rahman nir raheem</p>
-            <h3>SMS Luxe Carz</h3>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 30px;">
-            <nav>
-                <ul>
-                    <li><a href="/" style="--i:1;" class="nav-link">Home</a></li>
-                    <li><a href="#about" style="--i:2;" class="nav-link">About Us</a></li>
-                    <li><a href="#fleet" style="--i:3;" class="nav-link">Fleet</a></li>
-                    <li><a href="#contact" style="--i:4;" class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-tog" onclick="showSideBar()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
-        </div>
+    <!-- Intro Video Section -->
+    <div id="intro-video-container">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="./assets/videos/intro_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="side-close" onclick="closeSideBar()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
-        </div>
-        <a href="#about" onclick="closeSideBar()">Home</a>
-        <a href="#about" onclick="closeSideBar()">About Us</a>
-        <a href="#fleet" onclick="closeSideBar()">Fleet</a>
-        <a href="#contact" onclick="closeSideBar()">Contact Us</a>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero"
-        class="relative p-4 sm:p-0 h-[90vh] sm:h-[90vh] bg-cover bg-center text-white flex items-center justify-center hero-section">
-        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
-        <div class="text-center fade-in relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Luxury Redefined</h1>
-            <p class="text-lg md:text-xl mb-6">Experience the pinnacle of comfort and style with SMS Luxe Carz.</p>
-            <a href="#fleet" class="btn-luxury">View Our Fleet</a>
-        </div>
-    </section>
-
-    <!-- New Content Sections -->
-
-    <!-- About Us -->
-    <section id="about" class="py-12 px-6 bg-gray-100 text-gray-800">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">Luxury Car Rental</h2>
-            <p class="text-lg mb-4">
-                Our luxury car rental company is set in Chennai, offering premium cars like Rolls-Royce, Audi, BMW, and more.
-                We specialize in making your celebrations grand, whether it’s a wedding, birthday, or corporate event.
-            </p>
-            <p class="text-lg">
-                Enjoy unmatched style and comfort with our well-maintained vehicles and experienced drivers, available for
-                24x7 airport pickups, VIP transport, photoshoots, and more.
-            </p>
-        </div>
-    </section>
-
-    <!-- Fleet Highlights -->
-    <section id="fleet" class="py-12 px-6 bg-white text-gray-800">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-6 text-[#ffbf00]">Our Fleet</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <img src="./assets/images/rolls_royce.jpeg" alt="Rolls Royce" class="w-full h-40 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Rolls Royce</h3>
-                    <p class="text-gray-600">Luxury and elegance combined to make your events memorable.</p>
-                </div>
-                <div class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <img src="./assets/images/audi.jpg" alt="Audi" class="w-full h-40 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Audi</h3>
-                    <p class="text-gray-600">Premium style for your corporate or personal events.</p>
-                </div>
-                <div class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <img src="./assets/images/bmw.jpg" alt="BMW" class="w-full h-40 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">BMW</h3>
-                    <p class="text-gray-600">Experience power and sophistication with our BMW rentals.</p>
-                </div>
+    <div id="main-content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="#hero">
+                <img src="./assets/logo.png" alt="logo">
+            </a>
+            <div class="heading">
+                <p>bismillah hir rahman nir raheem</p>
+                <h3>SMS Luxe Carz</h3>
             </div>
-            
+            <div style="display: flex; align-items: center; justify-content: flex-end; gap: 30px;">
+                <nav>
+                    <ul>
+                        <li><a href="/" style="--i:1;" class="nav-link">Home</a></li>
+                        <li><a href="#about" style="--i:2;" class="nav-link">About Us</a></li>
+                        <li><a href="#fleet" style="--i:3;" class="nav-link">Fleet</a></li>
+                        <li><a href="#contact" style="--i:4;" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-tog" onclick="showSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
         </div>
-    </section>
 
-    <!-- Why Choose Us -->
-    <section class="py-12 px-6 bg-gray-100 text-gray-800">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">Why Choose Us?</h2>
-            <ul class="list-disc list-inside">
-                <li class="mb-2">Affordable pricing with no compromise on quality.</li>
-                <li class="mb-2">Professional drivers for a safe and enjoyable journey.</li>
-                <li class="mb-2">Wide range of luxury cars for all your needs.</li>
-                <li class="mb-2">24/7 availability for airport transfers and VIP transport.</li>
-            </ul>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="side-close" onclick="closeSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </div>
+            <a href="#about" onclick="closeSideBar()">Home</a>
+            <a href="#about" onclick="closeSideBar()">About Us</a>
+            <a href="#fleet" onclick="closeSideBar()">Fleet</a>
+            <a href="#contact" onclick="closeSideBar()">Contact Us</a>
         </div>
-    </section>
 
-    <!-- FAQs -->
-    <section id="faqs" class="py-12 px-6 bg-white text-gray-800">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">FAQs</h2>
-            <h3 class="text-xl font-semibold mb-2">How much does it cost to rent a luxury car in Chennai?</h3>
-            <p class="text-lg mb-4">
-                Our premium car rentals are priced competitively to ensure affordability without compromising on quality.
-                Get in touch for a custom quote based on your requirements.
-            </p>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section id="hero"
+            class="relative p-4 sm:p-0 h-[90vh] sm:h-[90vh] bg-cover bg-center text-white flex items-center justify-center hero-section">
+            <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+            <div class="text-center fade-in relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Luxury Redefined</h1>
+                <p class="text-lg md:text-xl mb-6">Experience the pinnacle of comfort and style with SMS Luxe Carz.</p>
+                <a href="#fleet" class="btn-luxury">View Our Fleet</a>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-6 text-center fade-in">
-        <p>&copy; 2024 SMS Luxe Carz. All rights reserved.</p>
-    </footer>
+        <!-- New Content Sections -->
 
+        <!-- About Us -->
+        <section id="about" class="py-12 px-6 bg-gray-100 text-gray-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">Luxury Car Rental</h2>
+                <p class="text-lg mb-4">
+                    Our luxury car rental company is set in Chennai, offering premium cars like Rolls-Royce, Audi, BMW,
+                    and more.
+                    We specialize in making your celebrations grand, whether it’s a wedding, birthday, or corporate
+                    event.
+                </p>
+                <p class="text-lg">
+                    Enjoy unmatched style and comfort with our well-maintained vehicles and experienced drivers,
+                    available for
+                    24x7 airport pickups, VIP transport, photoshoots, and more.
+                </p>
+            </div>
+        </section>
+
+        <!-- Fleet Highlights -->
+        <section id="fleet" class="py-12 px-6 bg-white text-gray-800">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-6 text-[#ffbf00]">Our Fleet</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="./assets/images/rolls_royce.jpeg" alt="Rolls Royce"
+                            class="w-full h-40 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Rolls Royce</h3>
+                        <p class="text-gray-600">Luxury and elegance combined to make your events memorable.</p>
+                    </div>
+                    <div
+                        class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="./assets/images/audi.jpg" alt="Audi"
+                            class="w-full h-40 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Audi</h3>
+                        <p class="text-gray-600">Premium style for your corporate or personal events.</p>
+                    </div>
+                    <div
+                        class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="./assets/images/bmw.jpg" alt="BMW" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">BMW</h3>
+                        <p class="text-gray-600">Experience power and sophistication with our BMW rentals.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-12 px-6 bg-gray-100 text-gray-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">Why Choose Us?</h2>
+                <ul class="list-disc list-inside">
+                    <li class="mb-2">Affordable pricing with no compromise on quality.</li>
+                    <li class="mb-2">Professional drivers for a safe and enjoyable journey.</li>
+                    <li class="mb-2">Wide range of luxury cars for all your needs.</li>
+                    <li class="mb-2">24/7 availability for airport transfers and VIP transport.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faqs" class="py-12 px-6 bg-white text-gray-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">FAQs</h2>
+                <h3 class="text-xl font-semibold mb-2">How much does it cost to rent a luxury car in Chennai?</h3>
+                <p class="text-lg mb-4">
+                    Our premium car rentals are priced competitively to ensure affordability without compromising on
+                    quality.
+                    Get in touch for a custom quote based on your requirements.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black text-white py-6 text-center fade-in">
+            <p>&copy; 2024 SMS Luxe Carz. All rights reserved.</p>
+        </footer>
+
+    </div>
     <script src="./script.js"></script>
 </body>
 

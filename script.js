@@ -1,11 +1,24 @@
-// Mobile Menu Toggle
+// Intro 
+
+const introVideo = document.getElementById('intro-video');
+const introContainer = document.getElementById('intro-video-container');
+const mainContent = document.getElementById('main-content');
+
+introVideo.onended = () => {
+    introContainer.style.display = 'none';
+    mainContent.style.display = 'block';
+};
+
+
 function showSideBar() {
   document.querySelector(".sidebar").style.right = "0";
 }
 function closeSideBar() {
   document.querySelector(".sidebar").style.right = "-150%";
 }
-// Fade-in Effect on Scroll
+
+
+
 const fadeElements = document.querySelectorAll(".fade-in");
 
 const fadeInOnScroll = () => {
