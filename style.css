@@ -270,7 +270,7 @@ h3 {
 }
 
 .hero-section {
-  background-image: url("./assets/images/home_image.jpeg");
+  background-image: url("./assets/images/HomeFleet/home_image.jpeg");
 }
 
 /* Button Styling */
@@ -318,6 +318,25 @@ h3 {
 .dynamic-grid > div:nth-child(6) {
   grid-area: 3/1/5/3;
 }
+.dynamic-grid > div:nth-child(7) {
+  grid-area: 3/3/4/4;
+}
+.dynamic-grid > div:nth-child(8) {
+  grid-area: 3/4/4/5;
+}
+.dynamic-grid > div:nth-child(9) {
+  grid-area: 4/3/5/4;
+}
+.dynamic-grid > div:nth-child(10) {
+  grid-area: 4/4/5/5;
+}
+.dynamic-grid > div:nth-child(11) {
+  grid-area: 5/1/6/3;
+}
+.dynamic-grid > div:nth-child(12) {
+  grid-area: 5/3/6/5;
+}
+
 
 .image {
   width: 100%;
@@ -326,34 +345,26 @@ h3 {
   transition: transform 0.3s ease;
 }
 
-.group:hover .image {
-  transform: scale(1.1);
-}
-
 .overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 16px;
-}
-
-.overlay-text {
+  background: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 1.25rem;
-  font-weight: bold;
+  padding: 10px;
+  font-size: 0.85rem; /* Smaller font size for readability */
   text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
 
 .group:hover .overlay {
   opacity: 1;
+}
+
+.group:hover .image {
+  transform: scale(1.05);
 }
 
 /* Mobile View */
@@ -374,6 +385,53 @@ h3 {
     grid-row: auto !important;
   }
 }
+
+
+/* Logo Slider Styles */
+#logo-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  animation: scroll 10s linear infinite; 
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(0); 
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 70px;
+    margin: 0 10px;
+  }
+}
+
+
+
+
 
 /* Keyframes */
 @keyframes fadeIn {
