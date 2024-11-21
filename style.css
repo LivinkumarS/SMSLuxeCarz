@@ -29,7 +29,6 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
-
 /* Intro section  */
 
 /* Intro Video Container */
@@ -56,10 +55,8 @@ h3 {
 /* Main Content (initially hidden) */
 #main-content {
   display: none;
-  animation: fadeIn .5s ease-in forwards;
+  animation: fadeIn 0.5s ease-in forwards;
 }
-
-
 
 /* Home Section  */
 
@@ -91,20 +88,24 @@ h3 {
   animation: slideFromRight 1s ease forwards;
 }
 
-.navbar>a{
+.navbar > a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.navbar>.heading h3{
+.navbar > .heading h3 {
   color: #ffbf00;
-  font-family: 'Saleha';
+  font-family: "Saleha";
+}
+.navbar > .heading p {
+  font-size: 10px;
+  color: #fff;
+  font-family: "Saleha";
 }
 
-
-.navbar>.heading{
+.navbar > .heading {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -289,7 +290,6 @@ h3 {
   transform: translateY(-3px);
 }
 
-
 /* Image Gallery  */
 
 .dynamic-grid {
@@ -300,22 +300,22 @@ h3 {
   grid-auto-flow: dense;
 }
 
-.dynamic-grid>div:first-child{
+.dynamic-grid > div:first-child {
   grid-area: 1/1/2/3;
 }
-.dynamic-grid>div:nth-child(2){
+.dynamic-grid > div:nth-child(2) {
   grid-area: 1/3/3/4;
 }
-.dynamic-grid>div:nth-child(3){
+.dynamic-grid > div:nth-child(3) {
   grid-area: 1/4/2/-1;
 }
-.dynamic-grid>div:nth-child(4){
+.dynamic-grid > div:nth-child(4) {
   grid-area: 2/1/3/3;
 }
-.dynamic-grid>div:nth-child(5){
+.dynamic-grid > div:nth-child(5) {
   grid-area: 2/4/3/-1;
 }
-.dynamic-grid>div:nth-child(6){
+.dynamic-grid > div:nth-child(6) {
   grid-area: 3/1/5/3;
 }
 
@@ -359,40 +359,21 @@ h3 {
 /* Mobile View */
 @media screen and (max-width: 640px) {
   .dynamic-grid {
-      grid-template-columns: 1fr;
-      grid-auto-rows: 150px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px;
   }
 
   .dynamic-grid > div {
-      grid-column: auto !important;
-      grid-row: auto !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
   }
 }
 @media screen and (max-width: 900px) {
-
   .dynamic-grid > div {
-      grid-column: auto !important;
-      grid-row: auto !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Keyframes */
 @keyframes fadeIn {
@@ -403,8 +384,6 @@ h3 {
     opacity: 1;
   }
 }
-
-
 
 @keyframes slideFromRight {
   0% {
@@ -427,19 +406,17 @@ h3 {
   }
 }
 
-
 /* Media Queries */
 
-@media (max-width:400px) {
-  .navbar>.heading h3{
+@media (max-width: 400px) {
+  .navbar > .heading h3 {
     font-size: 10px;
   }
-  
-  .navbar>.heading p{
+
+  .navbar > .heading p {
     font-size: 7px;
   }
 }
-
 
 @media (max-width: 835px) {
   .navbar nav {
