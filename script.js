@@ -1,23 +1,9 @@
-// Intro 
-
-const introVideo = document.getElementById('intro-video');
-const introContainer = document.getElementById('intro-video-container');
-const mainContent = document.getElementById('main-content');
-
-introVideo.onended = () => {
-    introContainer.style.display = 'none';
-    mainContent.style.display = 'block';
-};
-
-
 function showSideBar() {
   document.querySelector(".sidebar").style.right = "0";
 }
 function closeSideBar() {
   document.querySelector(".sidebar").style.right = "-150%";
 }
-
-
 
 const fadeElements = document.querySelectorAll(".fade-in");
 
@@ -32,35 +18,3 @@ const fadeInOnScroll = () => {
 };
 
 window.addEventListener("scroll", fadeInOnScroll);
-
-function confettiFalling() {
-  var box = document.getElementById("hero");
-  var colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink"];
-
-  for (var i = 0; i < 1000; i++) {
-    var div = document.createElement("div");
-    div.classList.add("confetti");
-    box.appendChild(div);
-  }
-
-  var confetti = document.querySelectorAll(".confetti");
-
-  for (var i = 0; i < confetti.length; i++) {
-    var size = Math.random() * 0.008 * [i];
-
-    confetti[i].style.width = 5 + size + "px";
-    confetti[i].style.height = 16 + size + "px";
-    confetti[i].style.left = Math.random() * innerWidth + "px";
-
-    var background = colors[Math.floor(Math.random() * colors.length)];
-    confetti[i].style.backgroundColor = background;
-
-    box.children[i].style.transform = "rotate(" + size * [i] + "deg)";
-    setTimeout(() => {
-      for (var i = 0; i < confetti.length; i++) {
-        confetti[i].remove();
-      }
-    }, 11000);
-  }
-}
-confettiFalling();

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SMS Luxe Carz</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">
+            <img src="./assets/logo.png" alt="logo">
+        </a>
+        <div class="heading">
+            <p>bismillah hir rahman nir raheem</p>
+            <h3>SMS Luxe Carz</h3>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 30px;">
+            <nav>
+                <ul>
+                    <li><a href="/" style="--i:1;" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" style="--i:2;" class="nav-link">About Us</a></li>
+                    <li><a href="#" style="--i:3;" class="nav-link">Fleet</a></li>
+                    <li><a href="#" style="--i:4;" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-tog" onclick="showSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="side-close" onclick="closeSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </div>
+        <a href="/" onclick="closeSideBar()">Home</a>
+        <a href="./about.html" onclick="closeSideBar()">About Us</a>
+        <a href="#" onclick="closeSideBar()">Fleet</a>
+        <a href="#" onclick="closeSideBar()">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[90vh] overflow-hidden">
+        <!-- Static Text Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center z-10">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">About SMS Luxe Carz</h1>
+                <p class="text-lg md:text-xl mb-6">Your luxury journey begins here.</p>
+            </div>
+        </div>
+
+        <!-- Sliding Images -->
+        <div id="slider" class="absolute inset-0 flex w-full h-full transition-transform duration-700 z-0">
+            <div class="flex-shrink-0 w-full h-full bg-cover bg-center"
+                style="background-image: url('./assets/images/AboutPage/BannerImages/1.jpg');"></div>
+            <div class="flex-shrink-0 w-full h-full bg-cover bg-center"
+                style="background-image: url('./assets/images/AboutPage/BannerImages/2.jpg');"></div>
+            <div class="flex-shrink-0 w-full h-full bg-cover bg-center"
+                style="background-image: url('./assets/images/AboutPage/BannerImages/3.jpg');"></div>
+            <div class="flex-shrink-0 w-full h-full bg-cover bg-center"
+                style="background-image: url('./assets/images/AboutPage/BannerImages/4.jpg');"></div>
+        </div>
+    </div>
+
+
+
+    <!-- About Us Section -->
+    <section id="about-content" class="py-12 px-6 bg-white text-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center text-[#ffbf00]">Who We Are</h2>
+            <p class="text-center text-lg mb-6">
+                Established in Chennai, SMS Luxe Carz is a premier luxury car rental service provider. We pride
+                ourselves on offering a diverse fleet of high-end vehicles, including Rolls-Royce, BMW, Audi, and
+                more. Whether it’s a wedding, corporate event, or VIP transport, we deliver unparalleled service to
+                make every occasion unforgettable.
+            </p>
+            <p class="text-center text-lg">
+                From airport pickups to photoshoots, our professional drivers and meticulously maintained cars ensure
+                a smooth and stylish ride. Experience excellence with SMS Luxe Carz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-12 px-6 bg-gray-100 text-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-[#ffbf00]">Why Choose Us?</h2>
+            <ul class="list-disc list-inside">
+                <li class="mb-4">Unmatched luxury and comfort for every journey.</li>
+                <li class="mb-4">A wide range of high-end cars for every occasion.</li>
+                <li class="mb-4">Affordable pricing without compromising on quality.</li>
+                <li class="mb-4">Professional drivers ensuring a safe and pleasant ride.</li>
+                <li class="mb-4">24/7 availability for seamless travel experiences.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-12 px-6 bg-white text-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6 text-[#ffbf00]">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <p class="text-lg italic">"The Rolls-Royce was a showstopper at our wedding! Exceptional service and
+                        professionalism."</p>
+                    <span class="block text-right mt-4 font-semibold">- Aisha M.</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <p class="text-lg italic">"Punctual, courteous, and luxurious – SMS Luxe Carz exceeded my
+                        expectations."</p>
+                    <span class="block text-right mt-4 font-semibold">- Ramesh P.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 text-center fade-in">
+        <p>&copy; 2024 SMS Luxe Carz. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script>
+        const slider = document.getElementById('slider');
+        let currentIndex = 0;
+
+        function slide() {
+            currentIndex = (currentIndex + 1) % 4;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(slide, 3000);
+    </script>
+
+
+</body>
+
+</html>

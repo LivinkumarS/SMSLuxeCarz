@@ -37,7 +37,7 @@
                 <nav>
                     <ul>
                         <li><a href="/" style="--i:1;" class="nav-link">Home</a></li>
-                        <li><a href="#" style="--i:2;" class="nav-link">About Us</a></li>
+                        <li><a href="./about.html" style="--i:2;" class="nav-link">About Us</a></li>
                         <li><a href="#" style="--i:3;" class="nav-link">Fleet</a></li>
                         <li><a href="#" style="--i:4;" class="nav-link">Contact Us</a></li>
                     </ul>
@@ -60,8 +60,8 @@
                         d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg>
             </div>
-            <a href="#" onclick="closeSideBar()">Home</a>
-            <a href="#" onclick="closeSideBar()">About Us</a>
+            <a href="/" onclick="closeSideBar()">Home</a>
+            <a href="./about.html" onclick="closeSideBar()">About Us</a>
             <a href="#" onclick="closeSideBar()">Fleet</a>
             <a href="#" onclick="closeSideBar()">Contact Us</a>
         </div>
@@ -111,7 +111,8 @@
                     </div>
                     <div
                         class="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <img src="./assets/images/HomeFleet/bmw.jpg" alt="BMW" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                        <img src="./assets/images/HomeFleet/bmw.jpg" alt="BMW"
+                            class="w-full h-40 object-cover rounded-t-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">BMW</h3>
                         <p class="text-gray-600">Experience power and sophistication with our BMW rentals.</p>
                     </div>
@@ -262,8 +263,8 @@
                         <img src="./assets/images/HomeLogos/miniCooper-logo.png" alt="Logo 7" class="logo">
                         <img src="./assets/images/HomeLogos/rollsRoyce-logo.png" alt="Logo 8" class="logo">
                         <img src="./assets/images/HomeLogos/toyoto-logo.png" alt="Logo 9" class="logo">
-                        
-                        
+
+
                         <img src="./assets/images/HomeLogos/audi-logo.png" alt="Logo 1" class="logo">
                         <img src="./assets/images/HomeLogos/BentleyBentayga-logo.png" alt="Logo 2" class="logo">
                         <img src="./assets/images/HomeLogos/benz-logo.png" alt="Logo 3" class="logo">
@@ -277,7 +278,7 @@
                 </div>
             </div>
         </section>
-        
+
 
 
 
@@ -316,7 +317,58 @@
         </footer>
 
     </div>
+    <script>
+        const introVideo = document.getElementById('intro-video');
+        const introContainer = document.getElementById('intro-video-container');
+        const mainContent = document.getElementById('main-content');
+
+        const hasVideoPlayed = sessionStorage.getItem('introVideoPlayed');
+
+        if (hasVideoPlayed) {
+            introContainer.style.display = 'none';
+            mainContent.style.display = 'block';
+        } else {
+            introVideo.onended = () => {
+                introContainer.style.display = 'none';
+                mainContent.style.display = 'block';
+                sessionStorage.setItem('introVideoPlayed', 'true'); 
+            };
+        }
+
+        function confettiFalling() {
+            var box = document.getElementById("hero");
+            var colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink"];
+
+            for (var i = 0; i < 1000; i++) {
+                var div = document.createElement("div");
+                div.classList.add("confetti");
+                box.appendChild(div);
+            }
+
+            var confetti = document.querySelectorAll(".confetti");
+
+            for (var i = 0; i < confetti.length; i++) {
+                var size = Math.random() * 0.008 * [i];
+
+                confetti[i].style.width = 5 + size + "px";
+                confetti[i].style.height = 16 + size + "px";
+                confetti[i].style.left = Math.random() * innerWidth + "px";
+
+                var background = colors[Math.floor(Math.random() * colors.length)];
+                confetti[i].style.backgroundColor = background;
+
+                box.children[i].style.transform = "rotate(" + size * [i] + "deg)";
+                setTimeout(() => {
+                    for (var i = 0; i < confetti.length; i++) {
+                        confetti[i].remove();
+                    }
+                }, 11000);
+            }
+        }
+        confettiFalling();
+    </script>
     <script src="./script.js"></script>
+
 </body>
 
 </html>
