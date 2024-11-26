@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleets - SMS Luxe Carz</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/fleet.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar (Similar to About Page) -->
+    <div class="navbar">
+        <a href="/">
+            <img src="./assets/logo.png" alt="logo">
+        </a>
+        <div class="heading">
+            <p>Bismillah hir Rahman nir Rahim</p>
+            <h3>SMS Luxe Carz</h3>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 30px;">
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="/about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./fleets.html" style="color:#d98f30;" class="nav-link text-[#d98f30]">Fleet</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-tog" onclick="showSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[90vh] overflow-hidden">
+        <div class="absolute w-full inset-0 bg-black bg-opacity-40 flex items-center justify-center z-10 hero-section">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Explore Our Fleet</h1>
+                <p class="text-lg md:text-xl mb-6">Luxury cars and premium travel options tailored to your needs.</p>
+            </div>
+        </div>
+        <div class="absolute inset-0 w-full h-full bg-cover bg-center"
+            style="background-image: url('./assets/images/FleetsPage/banner.jpg');"></div>
+    </div>
+
+    <!-- Fleets Section -->
+    <section class="py-12 px-6 bg-white text-gray-800">
+        <div class="max-w-6xl mx-auto">
+
+
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Audi Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Discover the luxury and performance of Audi's premium car
+                    range, including A3, A4, A6, A8, Q2, Q3, Q5, Q7, and Q8.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/audi1.jpeg" alt="Audi A3" class="slide">
+                        <img src="./assets/images/fleetPage/slides/audi2.jpeg" alt="Audi A4" class="slide">
+                        <img src="./assets/images/fleetPage/slides/audi3.jpeg" alt="Audi A6" class="slide">
+                        <img src="./assets/images/fleetPage/slides/audi4.jpeg" alt="Audi Q8" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('audi-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('audi-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Bentley Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Indulge in supreme luxury with Bentley models such as
+                    Bentayga, Flying Spur, and Continental GT.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/bentley1.jpeg" alt="Bentley Bentayga" class="slide">
+                        <img src="./assets/images/fleetPage/slides/bentley2.jpeg" alt="Bentley Flying Spur"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/bentley3.jpeg" alt="Bentley Continental GT"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/bentley4.jpeg" alt="Bentley Bentayga" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('bentley-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('bentley-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">BMW Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Elevate your journey with BMW’s exceptional lineup,
+                    including 3 Series, 5 Series, 7 Series, X3, X5, and X7.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/bmw1.jpeg" alt="BMW 3 Series" class="slide">
+                        <img src="./assets/images/fleetPage/slides/bmw2.jpeg" alt="BMW 5 Series" class="slide">
+                        <img src="./assets/images/fleetPage/slides/bmw3.jpeg" alt="BMW X5" class="slide">
+                        <img src="./assets/images/fleetPage/slides/bmw4.jpeg" alt="BMW X7" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('bmw-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('bmw-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Fortuner Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Experience the rugged luxury and performance of Fortuner.
+                </p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/fortuner1.jpeg" alt="Fortuner Slide 1" class="slide">
+                        <img src="./assets/images/fleetPage/slides/fortuner2.jpeg" alt="Fortuner Slide 2" class="slide">
+                        <img src="./assets/images/fleetPage/slides/fortuner3.jpeg" alt="Fortuner Slide 3" class="slide">
+                        <img src="./assets/images/fleetPage/slides/fortuner4.jpeg" alt="Fortuner Slide 4" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('fortuner-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('fortuner-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Innova Crysta Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Discover the elegance and space of Innova Crysta for
+                    family
+                    and group trips.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/innova1.jpeg" alt="Innova Crysta Slide 1"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/innova2.jpeg" alt="Innova Crysta Slide 2"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/innova3.jpeg" alt="Innova Crysta Slide 3"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/innova4.jpeg" alt="Innova Crysta Slide 4"
+                            class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('innova-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('innova-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Innova Crysta Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Discover the elegance and space of Innova Crysta for
+                    family
+                    and group trips.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/innova1.jpeg" alt="Innova Crysta Slide 1"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/innova2.jpeg" alt="Innova Crysta Slide 2"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/innova3.jpeg" alt="Innova Crysta Slide 3"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/innova4.jpeg" alt="Innova Crysta Slide 4"
+                            class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('innova-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('innova-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Jaguar Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Experience the thrill of Jaguar with models like XE, XF,
+                    and XJL.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/jaguar1.jpeg" alt="Jaguar XE" class="slide">
+                        <img src="./assets/images/fleetPage/slides/jaguar2.jpeg" alt="Jaguar XF" class="slide">
+                        <img src="./assets/images/fleetPage/slides/jaguar3.jpeg" alt="Jaguar XJL" class="slide">
+                        <img src="./assets/images/fleetPage/slides/jaguar4.jpeg" alt="Jaguar XJL" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('jaguar-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('jaguar-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Mahindra Thar Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Adventure awaits with the rugged Mahindra Thar.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/thar1.jpeg" alt="Mahindra Thar Slide 1"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/thar2.jpeg" alt="Mahindra Thar Slide 2"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/thar3.jpeg" alt="Mahindra Thar Slide 3"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/thar4.jpeg" alt="Mahindra Thar Slide 4"
+                            class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('thar-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('thar-slider')">&#10095;</button>
+                </div>
+            </div>
+
+
+            <!-- Mini Cooper Fleet -->
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Mini Cooper Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Add a dash of style and performance with Mini Cooper for
+                    city
+                    rides.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/mini1.jpeg" alt="Mini Cooper Slide 1" class="slide">
+                        <img src="./assets/images/fleetPage/slides/mini2.jpeg" alt="Mini Cooper Slide 2" class="slide">
+                        <img src="./assets/images/fleetPage/slides/mini3.jpeg" alt="Mini Cooper Slide 3" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('mini-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('mini-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Rolls Royce</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Experience unmatched luxury and elegance with Rolls Royce
+                    for every special occasion.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/rolls1.jpeg" alt="Rolls Royce Slide 1" class="slide">
+                        <img src="./assets/images/fleetPage/slides/rolls2.jpeg" alt="Rolls Royce Slide 2" class="slide">
+                        <img src="./assets/images/fleetPage/slides/rolls3.jpeg" alt="Rolls Royce Slide 3" class="slide">
+                        <img src="./assets/images/fleetPage/slides/rolls4.jpeg" alt="Rolls Royce Slide 4" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('rolls-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('rolls-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Tempo Traveler Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Travel in comfort with our spacious 12-seater and
+                    16-seater
+                    Tempo Travelers.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/tempo1.jpeg" alt="12-seater Tempo Traveler"
+                            class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('tempo-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('tempo-slider')">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Vintage Car Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Step back in time with our collection of vintage luxury
+                    cars.
+                </p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/vintage1.jpg" alt="Vintage Car Slide 1"
+                            class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('vintage-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('vintage-slider')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 text-center fade-in">
+        <p>&copy; 2024 SMS Luxe Carz. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // This will ensure that each slider operates independently
+        const sliders = document.querySelectorAll('.slider');
+
+        sliders.forEach((slider, index) => {
+            const slides = slider.querySelectorAll('.slide');
+            let slideIndex = 0;
+            let intervalId = null;
+
+            initializeSlider();
+
+            function initializeSlider() {
+                if (slides.length > 0) {
+                    slides[slideIndex].classList.add("displaySlide");
+                    intervalId = setInterval(nextSlide, 5000);
+                }
+            }
+
+            function showSlide(index) {
+                if (index >= slides.length) {
+                    slideIndex = 0;
+                } else if (index < 0) {
+                    slideIndex = slides.length - 1;
+                }
+
+                slides.forEach((slide) => {
+                    slide.classList.remove("displaySlide");
+                });
+
+                slides[slideIndex].classList.add("displaySlide");
+            }
+
+            function prevSlide() {
+                slideIndex--;
+                showSlide(slideIndex);
+            }
+
+            function nextSlide() {
+                slideIndex++;
+                showSlide(slideIndex);
+            }
+
+            const prevButton = slider.querySelector('.prev');
+            const nextButton = slider.querySelector('.next');
+
+            if (prevButton && nextButton) {
+                prevButton.addEventListener('click', prevSlide);
+                nextButton.addEventListener('click', nextSlide);
+            }
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>
