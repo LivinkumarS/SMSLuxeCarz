@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SMS Luxe Carz</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">
+            <img src="./assets/logo.png" alt="logo">
+        </a>
+        <div class="heading">
+            <p>Bismillah hir Rahman nir Rahim</p>
+            <h3>SMS Luxe Carz</h3>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 30px;">
+            <nav>
+                <ul>
+                    <li><a href="./index.html" style="--i:1;" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" style="--i:2;" class="nav-link">About Us</a></li>
+                    <li><a href="./fleet.html" style="--i:3;" class="nav-link">Fleet</a></li>
+                    <li><a href="#" style="--i:4;color:#d98f30;" class="nav-link text-[#d98f30]">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-tog" onclick="showSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="side-close" onclick="closeSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </div>
+        <a href="./index.html" onclick="closeSideBar()">Home</a>
+        <a href="./about.html" onclick="closeSideBar()">About Us</a>
+        <a href="./fleet.html" onclick="closeSideBar()">Fleet</a>
+        <a href="#" onclick="closeSideBar()">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[90vh] overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center z-10">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Contact SMS Luxe Carz</h1>
+                <p class="text-lg md:text-xl mb-6">We'd love to hear from you!</p>
+            </div>
+        </div>
+        <div class="absolute inset-0 flex w-full h-full bg-cover bg-center"
+            style="background-image: url('./assets/images/contactPage/contact-banner.jpeg');"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact-details" class="py-12 px-6 bg-white text-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-[#d98f30]">Reach Out to Us</h2>
+            <p class="text-lg mb-8">Feel free to get in touch with us for bookings, inquiries, or any assistance.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Address -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Our Address</h3>
+                    <p>S Nazeer Basha</p>
+                    <p>No 1, Nattal Garden Street,</p>
+                    <p>Kumaran Nagar,</p>
+                    <p>Chennai 600 011</p>
+                    <p class="mt-4 font-semibold text-[#d98f30]">Phone: <a href="tel:9176718005">9176718005</a></p>
+                </div>
+
+                <!-- Emails -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Email Us</h3>
+                    <ul class="list-disc list-inside sm:text-center text-left ">
+                        <li><a href="mailto:founder@smsluxecarz.in" class="text-[#d98f30]">founder@smsluxecarz.in</a></li>
+                        <li><a href="mailto:enquiries@smsluxecarz.in" class="text-[#d98f30]">enquiries@smsluxecarz.in</a></li>
+                        <li><a href="mailto:director@smsluxecarz.in" class="text-[#d98f30]">director@smsluxecarz.in</a></li>
+                        <li><a href="mailto:ceo@smsluxecarz.in" class="text-[#d98f30]">ceo@smsluxecarz.in</a></li>
+                        <li><a href="mailto:bookings@smsluxecarz.in" class="text-[#d98f30]">bookings@smsluxecarz.in</a></li>
+                        <li><a href="mailto:accounts@smsluxecarz.in" class="text-[#d98f30]">accounts@smsluxecarz.in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 text-center fade-in">
+        <p>&copy; 2024 SMS Luxe Carz. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
