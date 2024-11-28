@@ -124,6 +124,22 @@
             </div>
 
             <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Ferrari Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Experience speed and elegance with Ferrari.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/ferrari1.jpeg" alt="Ferrari Slide 1" class="slide">
+                        <img src="./assets/images/fleetPage/slides/ferrari2.jpeg" alt="Ferrari Slide 2" class="slide">
+                        <img src="./assets/images/fleetPage/slides/ferrari3.jpeg" alt="Ferrari Slide 3" class="slide">
+                        <img src="./assets/images/fleetPage/slides/ferrari4.jpeg" alt="Ferrari Slide 4" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('ferrari-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('ferrari-slider')">&#10095;</button>
+                </div>
+            </div>
+            
+
+            <div class="mb-10">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Fortuner Fleet</h2>
                 <p class="text-center text-sm sm:text-lg mb-4">Experience the rugged luxury and performance of Fortuner.
                 </p>
@@ -216,6 +232,24 @@
                 </div>
             </div>
 
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Mercedes-Benz Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Experience luxury and performance with Mercedes-Benz.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/benz1.jpeg" alt="Mercedes-Benz Slide 1"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/benz2.jpeg" alt="Mercedes-Benz Slide 2"
+                            class="slide">
+                        <img src="./assets/images/fleetPage/slides/benz4.jpeg" alt="Mercedes-Benz Slide 4"
+                            class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('mercedes-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('mercedes-slider')">&#10095;</button>
+                </div>
+            </div>
+            
+
 
             <!-- Mini Cooper Fleet -->
             <div class="mb-10">
@@ -233,6 +267,25 @@
                     <button class="next" onclick="nextSlide('mini-slider')">&#10095;</button>
                 </div>
             </div>
+
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#d7a03c]">Porsche Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Discover the timeless design and performance of Porsche.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/porsche1.jpeg" alt="Porsche Slide 1" class="slide">
+                        <img src="./assets/images/fleetPage/slides/porsche2.jpeg" alt="Porsche Slide 2" class="slide">
+                        <img src="./assets/images/fleetPage/slides/porsche3.jpeg" alt="Porsche Slide 3" class="slide">
+                        <img src="./assets/images/fleetPage/slides/porsche4.jpeg" alt="Porsche Slide 4" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('porsche-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('porsche-slider')">&#10095;</button>
+                </div>
+            </div>
+            
+
+
 
             <div class="mb-10">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Rolls Royce</h2>
@@ -264,6 +317,22 @@
                     <button class="next" onclick="nextSlide('tempo-slider')">&#10095;</button>
                 </div>
             </div>
+
+            <div class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Urbania Fleet</h2>
+                <p class="text-center text-sm sm:text-lg mb-4">Step into the future of urban mobility with Urbania.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./assets/images/fleetPage/slides/urbania1.jpeg" alt="Urbania Slide 1" class="slide">
+                        <img src="./assets/images/fleetPage/slides/urbania2.jpeg" alt="Urbania Slide 2" class="slide">
+                        <img src="./assets/images/fleetPage/slides/urbania3.jpeg" alt="Urbania Slide 3" class="slide">
+                        <img src="./assets/images/fleetPage/slides/urbania4.jpeg" alt="Urbania Slide 4" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide('urbania-slider')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('urbania-slider')">&#10095;</button>
+                </div>
+            </div>
+            
 
             <div class="mb-10">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#ffbf00]">Vintage Car Fleet</h2>
@@ -303,7 +372,7 @@
             function initializeSlider() {
                 if (slides.length > 0) {
                     slides[slideIndex].classList.add("displaySlide");
-                    intervalId = setInterval(nextSlide, 5000);
+                    intervalId = setInterval(nextSlide, 7000);
                 }
             }
 
