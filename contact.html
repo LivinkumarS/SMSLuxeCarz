@@ -120,6 +120,44 @@
         </div>
     </section>
 
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-12 px-6 bg-white text-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-[#d98f30]">Contact Form</h2>
+            <p class="text-lg mb-8">Please fill out the form below and we will get back to you as soon as possible.</p>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST"
+                class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="_replyto" required
+                            class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-700">Subject</label>
+                    <input type="text" id="subject" name="subject" required
+                        class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full py-3 px-6 bg-[#d98f30] text-white font-bold rounded-lg shadow-md hover:bg-[#b77a24] focus:ring-4 focus:ring-[#d98f30] focus:ring-opacity-50">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+
     <!-- Footer -->
     <footer class="bg-black text-white py-6 text-center fade-in">
         <p>&copy; 2024 SMS Luxe Carz. All rights reserved.</p>
