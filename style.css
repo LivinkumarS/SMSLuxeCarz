@@ -60,6 +60,9 @@ h3 {
 
 /* Home Section  */
 
+
+
+
 .whatsapp-button {
   z-index: 999 !important;
   position: fixed;
@@ -91,6 +94,38 @@ h3 {
   height: 60%;
   fill: white;
 }
+
+.phone-button {
+  z-index: 999 !important;
+  position: fixed;
+  bottom: 90px; /* Above the WhatsApp button */
+  right: 20px;
+  background-color: #ff69b4; /* Pink background */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.phone-button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.phone-button svg {
+  width: 40%;
+  height: 40%;
+  fill: white;
+}
+
 
 /* navbar */
 

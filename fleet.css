@@ -32,7 +32,8 @@
 }
 
 .slider img {
-  width: 100%;
+  width: auto;
+  margin: auto;
   max-height: 500px;
   display: none;
 }
