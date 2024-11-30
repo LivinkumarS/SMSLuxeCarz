@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Saleha";
-  src: url("./assets/font/saleha.ttf") format("truetype");
+  src: url("./assets/font/ArabDances.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -165,9 +165,10 @@ h3 {
 .navbar > .heading h3 {
   color: #ffbf00;
   font-family: "Saleha";
+  font-size: x-large;
 }
 .navbar > .heading p {
-  font-size: 10px;
+  font-size: 15px;
   color: #fff;
   font-family: "Saleha";
 }
@@ -300,11 +301,15 @@ h3 {
 
 @media (max-width: 400px) {
   .navbar > .heading h3 {
-    font-size: 10px;
+    font-size: large;
   }
 
   .navbar > .heading p {
-    font-size: 7px;
+    font-size: 10px;
+  }
+
+  .navbar{
+    padding: 5px 7%;
   }
 }
 
