@@ -127,9 +127,13 @@ h3 {
 /* contact bar */
 
 .nav-contact a>svg{
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   fill: #d98f30;
+  transition: all .7s ease;
+}
+.nav-contact a>svg:hover{
+  scale: 1.2;
 }
 
 
