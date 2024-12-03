@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const snowContainer = document.querySelector(".snow-container");
 
     const particlesPerThousandPixels = 0.1;
-    const fallSpeed = 1.25;
+    const fallSpeed = 0.75;
     const pauseWhenNotActive = true;
     const maxSnowflakes = 200;
     const snowflakes = [];
@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetSnowflake(snowflake) {
         const size = Math.random() * 5 + 1;
-        const viewportWidth = window.innerWidth - size; // Adjust for snowflake size
+        const viewportWidth = window.innerWidth - size; 
         const viewportHeight = window.innerHeight;
 
         snowflake.style.width = `${size}px`;
         snowflake.style.height = `${size}px`;
-        snowflake.style.left = `${Math.random() * viewportWidth}px`; // Constrain within viewport width
+        snowflake.style.left = `${Math.random() * viewportWidth}px`;
         snowflake.style.top = `-${size}px`;
 
         const animationDuration = (Math.random() * 3 + 2) / fallSpeed;
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (parseInt(snowflake.style.top, 10) < viewportHeight) {
                 resetSnowflake(snowflake);
             } else {
-                snowflake.remove(); // Remove when it goes off the bottom edge
+                snowflake.remove(); 
             }
         }, animationDuration * 1000);
     }

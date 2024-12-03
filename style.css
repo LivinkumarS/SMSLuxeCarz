@@ -118,7 +118,7 @@ h3 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
+  background-color: #d98f30;
   color: white;
   border: none;
   border-radius: 50%;
@@ -134,7 +134,7 @@ h3 {
 }
 
 .whatsapp-button:hover {
-  background-color: #20b954;
+  background-color: #ff9100;
   box-shadow: 0 6px 12px rgba(14, 12, 12, 0.3);
   transform: scale(1.1);
 }
@@ -148,9 +148,9 @@ h3 {
 .phone-button {
   z-index: 999 !important;
   position: fixed;
-  bottom: 90px; /* Above the WhatsApp button */
+  bottom: 90px;
   right: 20px;
-  background-color: #ff69b4; /* Pink background */
+  background-color: #d98f30; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -165,7 +165,7 @@ h3 {
 }
 
 .phone-button:hover {
-  background-color: #ff1493; /* Darker pink on hover */
+  background-color: #ff9100; 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transform: scale(1.1);
 }
