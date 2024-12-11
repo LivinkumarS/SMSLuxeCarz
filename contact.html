@@ -192,17 +192,82 @@
                         <input type="email" id="email" name="_replyto" required
                             class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
                     </div>
-
                 </div>
-                <div>
-                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-700">Phone</label>
-                    <input type="tel" id="phone" name="phone" required
-                        class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                    <div>
+                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-700">Phone</label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-700">Subject</label>
+                        <input type="text" id="subject" name="subject" required
+                            class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                    </div>
                 </div>
-                <div class="mb-6">
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-700">Subject</label>
-                    <input type="text" id="subject" name="subject" required
-                        class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                    <div>
+                        <label for="service" class="block mb-2 text-sm font-medium text-gray-700">Service</label>
+                        <select id="service" name="service" required
+                            class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                            <option value="">Select a service</option>
+                            <option value="corporate">Corporate</option>
+                            <option value="family_tours">Family Tours / Group Tours</option>
+                            <option value="events">Events</option>
+                            <option value="individuals">Individuals</option>
+                            <option value="logistics">Logistics</option>
+                            <option value="functions">Functions</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="vehicle" class="block mb-2 text-sm font-medium text-gray-700">Preferred
+                            Vehicle</label>
+                        <select id="vehicle" name="vehicle" required
+                            class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#d98f30] focus:border-[#d98f30]">
+                            <option value="">Select a vehicle</option>
+                            <option value="rolls_royce">Rolls Royce</option>
+                            <option value="audi_a3">Audi A3</option>
+                            <option value="audi_a4">Audi A4</option>
+                            <option value="audi_a6">Audi A6</option>
+                            <option value="audi_a8">Audi A8</option>
+                            <option value="audi_q2">Audi Q2</option>
+                            <option value="audi_q3">Audi Q3</option>
+                            <option value="audi_q5">Audi Q5</option>
+                            <option value="audi_q7">Audi Q7</option>
+                            <option value="audi_q8">Audi Q8</option>
+                            <option value="benz_a_class">Benz A Class</option>
+                            <option value="benz_c_class">Benz C Class</option>
+                            <option value="benz_e_class">Benz E Class</option>
+                            <option value="benz_gls">Benz GLS</option>
+                            <option value="benz_s_class">Benz S Class</option>
+                            <option value="benz_v_class">Benz V Class</option>
+                            <option value="bmw_3_series">BMW 3 Series</option>
+                            <option value="bmw_5_series">BMW 5 Series</option>
+                            <option value="bmw_7_series">BMW 7 Series</option>
+                            <option value="bmw_x3">BMW X3</option>
+                            <option value="bmw_x4">BMW X4</option>
+                            <option value="bmw_x5">BMW X5</option>
+                            <option value="bmw_x6">BMW X6</option>
+                            <option value="bmw_x7">BMW X7</option>
+                            <option value="jaguar_xe">Jaguar XE</option>
+                            <option value="jaguar_xf">Jaguar XF</option>
+                            <option value="jaguar_xjl">Jaguar XJL</option>
+                            <option value="bentley_bentayga">Bentley Bentayga</option>
+                            <option value="bentley_flying_spur">Bentley Flying Spur</option>
+                            <option value="bentley_continental_gt">Bentley Continental GT</option>
+                            <option value="fortuner">Fortuner</option>
+                            <option value="innova_crysta">Innova Crysta</option>
+                            <option value="mini_cooper">Mini Cooper</option>
+                            <option value="mahindra_thar">Mahindra Thar</option>
+                            <option value="10seater_ac_maharaja">10-seater AC Maharaja Luxury Seat Traveler</option>
+                            <option value="12seater_ac_tempo">12-seater AC Tempo Traveler</option>
+                            <option value="12seater_ac_urbania">12-seater AC Urbania</option>
+                            <option value="16seater_ac_urbania">16-seater AC Urbania</option>
+                            <option value="vintage_car">Vintage Car</option>
+                            <option value="bharat_benz_bus">Bharat Benz Bus & Volvo Bus</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="mb-6">
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-700">Message</label>
@@ -213,6 +278,7 @@
                     class="w-full py-3 px-6 bg-[#d98f30] text-white font-bold rounded-lg shadow-md hover:bg-[#b77a24] focus:ring-4 focus:ring-[#d98f30] focus:ring-opacity-50">Send
                     Message</button>
             </form>
+
         </div>
     </section>
 
