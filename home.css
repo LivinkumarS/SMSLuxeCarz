@@ -218,7 +218,7 @@
   
   .logo-track {
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 15s linear infinite;
   }
   
   .logo {
@@ -226,5 +226,30 @@
     height: auto;
     margin: 0 15px;
     transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo-slider:hover .logo-track {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 60px;
+    }
   }
   
